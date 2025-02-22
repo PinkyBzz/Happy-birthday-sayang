@@ -1,4 +1,3 @@
-// Function to animate timeline items
 function animateTimelineItems() {
     const items = document.querySelectorAll('.timeline-item');
     items.forEach((item, index) => {
