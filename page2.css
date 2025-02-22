@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0e5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: backgroundChange 5s infinite alternate; /* Background color change */
+}
+
+@keyframes backgroundChange {
+    0% { background-color: #ffffff; }
+    100% { background-color: #ffebee; }
+}
+
+h1 {
+    color: #ff4081;
+    font-size: 2em;
+}
+
+.typing-animation {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 0;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    white-space: pre-wrap; /* Allow text to wrap */
+    overflow: hidden;
+    display: block; /* Ensure it behaves like a block for vertical stacking */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.heart {
+    font-size: 2em;
+    animation: heartbeat 1s infinite; /* Heartbeat animation */
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.photo-frame {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e91e63;
+}

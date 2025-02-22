@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0e5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: sparkle 1.5s infinite; /* Sparkle effect */
+}
+
+@keyframes sparkle {
+    0%, 100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+}
+
+h1 {
+    color: #ff4081;
+    font-size: 2em;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    animation: zoomIn 0.5s; /* Animation */
+}
+
+.video-container video {
+    max-width: 100%; /* Ensure video fits within the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9); /* Start slightly smaller */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: scale(1); /* End at normal size */
+        opacity: 1; /* Fade in */
+    }
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e91e63;
+}
