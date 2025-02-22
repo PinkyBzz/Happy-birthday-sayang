@@ -20,7 +20,6 @@ function animateTimelineItems() {
 // Function to create a dancing character
 function createDancingCharacter() {
     const character = document.createElement('div');
-    character.innerHTML = '💃'; // Dancing emoji
     character.style.position = 'absolute';
     character.style.left = '10%';
     character.style.bottom = '10%';
